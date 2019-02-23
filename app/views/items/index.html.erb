@@ -1,0 +1,14 @@
+<head>
+</head>
+<body>
+  <h1>マンガ</h1>
+  <% @books.each do |book| %>
+    <ul>
+      <li><%= book %></li>
+      <li>タイトル</li>
+      <li>著者</li>
+      <li>価格</li>
+      <li>出版社</li>
+    </ul>
+  <% end %>
+</body>
