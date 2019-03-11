@@ -10,6 +10,23 @@
   </head>
 
   <body>
+    <header class="header-menu">
+      <div class="header-title">
+        <h2>本屋だよ</h2>
+      </div>
+      <div class="header-search">
+        <%= form_tag books_path,method: 'get' do %>
+          <%= label_tag(:q, '検索') %>
+          <%= text_field_tag(:q) %>
+          <%= submit_tag('検索') %>
+        <% end %>
+      </div>
+      <ul class="header-list">
+        <li>マンガ</li>
+        <li>小説</li>
+        <li>雑誌</li>
+      </ul>
+    </header>
     <%= yield %>
   </body>
 </html>

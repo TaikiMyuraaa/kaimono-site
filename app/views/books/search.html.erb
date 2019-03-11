@@ -1,0 +1,6 @@
+<% rec=@rec %>
+<%= "検索結果#{rec}件" %>
+<p>検索結果を表示しています。</p>
+<% @books.each do |book| %>
+  <%= book.title %>
+<% end %>
