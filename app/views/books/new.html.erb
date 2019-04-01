@@ -1,0 +1,50 @@
+<h2>新規追加</h2>
+<%= form_for :book, url: books_path do |f| %>
+
+  <P>
+    <%= f.text_field :product_id, placeholder: '商品ID' %>
+    <% if @book.errors.messages[:product_id].any? %>
+      <%= @book.errors.messages[:product_id][0] %>
+    <% end %>
+  </p>
+  
+  <P>
+    <%= f.text_field :title, placeholder: 'タイトル' %>
+    <% if @book.errors.messages[:title].any? %>
+      <%= @book.errors.messages[:title][0] %>
+    <% end %>
+  </p>
+  
+  <P>
+    <%= f.text_field :price, placeholder: '価格' %>
+    <% if @book.errors.messages[:price].any? %>
+      <%= @book.errors.messages[:price][0] %>
+    <% end %>
+  </p>
+  
+  <P>
+    <%= f.text_field :category_id, placeholder: 'カテゴリー' %>
+    <% if @book.errors.messages[:category_id].any? %>
+      <%= @book.errors.messages[:category_id][0] %>
+    <% end %>
+  </p>  
+  
+  <P>
+    <%= f.text_field :aouthor_id, placeholder: '著者' %>
+    <% if @book.errors.messages[:aouthor_id].any? %>
+      <%= @book.errors.messages[:aouthor_id][0] %>
+    <% end %>
+  </p>
+  
+  <P>
+    <%= f.text_field :publisher_id, placeholder: '出版社' %>
+    <% if @book.errors.messages[:publisher_id].any? %>
+      <%= @book.errors.messages[:publisher_id][0] %>
+    <% end %>
+  </p>
+  
+  <P>
+    <%= f.submit 登録 %>
+  </p>  
+  
+<% end %>

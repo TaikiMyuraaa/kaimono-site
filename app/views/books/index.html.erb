@@ -1,13 +1,9 @@
-<head>
-</head>
 <body>
-  <% rec=@rec %>
-  <% if 0 < rec %>
-    <%= search_result = "検索結果" %>
-    <%= search_result"#{rec}件" %>
-    <p>検索結果を表示しています。</p>    
-  <% end %>
-  <% @books.each do |book| %>
-  <%= link_to book.title%>
-  <% end %>
+    <%= search_result = @result %>
+    <% @books.each do |book| %>
+      <% rec=@rec %>
+      <div class="index_list">
+        <%= link_to book.title,book_path(book) %>
+      </div>
+    <% end %>
 </body>

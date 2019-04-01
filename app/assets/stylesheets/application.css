@@ -5,7 +5,7 @@ body {
   min-height: 100%;
 }
 
-.header-menu {
+.header_menu {
   font-style: normal;
   border-style: solid;
   width: 100%;
@@ -13,17 +13,17 @@ body {
   color: white;
 }
 
-.header-title h2 {
+.header_title h2 {
   font-size: 15px;
   padding-left: 20px;
   display: inline;
 }
 
-.header-search {
+.header_search {
   padding: 10px;
 }
 
-.header-list li {
+.header_list li {
   list-style: none;
   margin: 5px;
   display: inline-block;

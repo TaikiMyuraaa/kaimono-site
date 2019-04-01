@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
-  
-  resources :books do
-    root 'books#index'
+  root 'books#index'
+  resources :books,:only => [:index,:new,:create,:show,:search] do
     collection do
       get 'search'
     end
   end
-  
-  
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :carts,:only => [:index,:new,:create]
+
 end

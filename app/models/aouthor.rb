@@ -1,0 +1,2 @@
+class Aouthor < ApplicationRecord
+end

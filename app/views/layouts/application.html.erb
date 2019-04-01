@@ -6,27 +6,27 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <header class="header-menu">
-      <div class="header-title">
-        <h2>本屋だよ</h2>
+    <header class="header_menu">
+      <div class="header_title">
+        <h2><%= link_to '本屋だよ',root_path %></h2>
       </div>
-      <div class="header-search">
-        <%= form_tag books_path,method: 'get' do %>
+      <div class="header_search">
+        <%= form_tag search_books_path,method: 'get' do %>
           <%= label_tag(:q, '検索') %>
           <%= text_field_tag(:q) %>
           <%= submit_tag('検索') %>
         <% end %>
       </div>
       <ul class="header-list">
-        <li>マンガ</li>
-        <li>小説</li>
-        <li>雑誌</li>
+        <li><%= link_to '新規追加',new_book_path, class: 'header_list' %></li>
       </ul>
     </header>
     <%= yield %>
+    <script type="text/javascript" src="pagination.js"></script>
   </body>
 </html>
