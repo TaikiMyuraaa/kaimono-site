@@ -3,23 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [7.22.0](https://github.com/heroku/cli/compare/v7.21.0...v7.22.0) (2019-02-20)
-
-
-### Bug Fixes
-
-* blacklist ps-wait as it is in core now ([#1195](https://github.com/heroku/cli/issues/1195)) ([c0c64bd](https://github.com/heroku/cli/commit/c0c64bd))
-
-
-### Features
-
-* **cli:** Use backboard for analytics ([#1188](https://github.com/heroku/cli/issues/1188)) ([a31cf08](https://github.com/heroku/cli/commit/a31cf08))
-
-
-
-
-
-# [7.21.0](https://github.com/heroku/cli/compare/v7.20.1...v7.21.0) (2019-02-11)
+## [7.22.7](https://github.com/heroku/cli/compare/v7.22.6...v7.22.7) (2019-03-14)
 
 **Note:** Version bump only for package heroku
 
@@ -27,7 +11,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [7.20.1](https://github.com/heroku/cli/compare/v7.20.0...v7.20.1) (2019-02-06)
+## [7.22.6](https://github.com/heroku/cli/compare/v7.22.5...v7.22.6) (2019-03-14)
 
 **Note:** Version bump only for package heroku
 
@@ -35,40 +19,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-# [7.20.0](https://github.com/heroku/cli/compare/v7.19.4...v7.20.0) (2019-02-05)
-
-
-### Bug Fixes
-
-* increase mocha timeouts ([7d31bc1](https://github.com/heroku/cli/commit/7d31bc1))
-
-
-
-
-
-## [7.19.4](https://github.com/heroku/cli/compare/v7.19.3...v7.19.4) (2018-12-19)
-
-
-### Bug Fixes
-
-* upgrade dependencies ([f1b3886](https://github.com/heroku/cli/commit/f1b3886))
-
-
-
-
-
-## [7.19.3](https://github.com/heroku/cli/compare/v7.19.2...v7.19.3) (2018-12-04)
-
-
-### Bug Fixes
-
-* remove login warnings ([39d8c47](https://github.com/heroku/cli/commit/39d8c47))
-
-
-
-
-
-## [7.19.2](https://github.com/heroku/cli/compare/v7.19.1...v7.19.2) (2018-12-04)
+## [7.22.5](https://github.com/heroku/cli/compare/v7.22.4...v7.22.5) (2019-03-13)
 
 **Note:** Version bump only for package heroku
 
@@ -76,46 +27,32 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [7.19.1](https://github.com/heroku/cli/compare/v7.19.0...v7.19.1) (2018-12-04)
-
-
-### Bug Fixes
-
-* node 11.3.0 ([a685839](https://github.com/heroku/cli/commit/a685839))
-
-
-
-
-
-# [7.19.0](https://github.com/heroku/cli/compare/v7.18.10...v7.19.0) (2018-12-03)
-
-
-### Bug Fixes
-
-* updated command ([1c49051](https://github.com/heroku/cli/commit/1c49051))
-
-
-
-
-
-## [7.18.10](https://github.com/heroku/cli/compare/v7.18.9...v7.18.10) (2018-11-26)
-
-
-### Bug Fixes
-
-* updated deps ([576c85a](https://github.com/heroku/cli/commit/576c85a))
-
-
-
-
-
-## [7.18.9](https://github.com/heroku/cli/compare/v7.18.8...v7.18.9) (2018-11-15)
+## [7.22.4](https://github.com/heroku/cli/compare/v7.22.3...v7.22.4) (2019-03-06)
 
 **Note:** Version bump only for package heroku
 
 
 
 
+
+## [7.22.3](https://github.com/heroku/cli/compare/v7.22.2...v7.22.3) (2019-03-04)
+
+
+### Bug Fixes
+
+* upgrade node to 11.10.1 ([e02635c](https://github.com/heroku/cli/commit/e02635c))
+
+
+
+
+
+<a name="7.22.2"></a>
+## [7.22.2](https://github.com/heroku/cli/compare/v7.22.1...v7.22.2) (2019-02-28)
+
+
+
+
+**Note:** Version bump only for package heroku
 
 <a name="7.18.8"></a>
 ## [7.18.8](https://github.com/heroku/cli/compare/v7.18.7...v7.18.8) (2018-11-14)

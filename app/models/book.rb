@@ -9,25 +9,17 @@ class Book < ApplicationRecord
   validates :price, presence: true
   validates :category_id, presence: true
   
+  # 検索欄メソッド
   def self.search(key)
     c = Search.new(key)
     if c.keyword.match(/[ |　]/)
-      str = c.like_str
-      @books = Book.where(str)
+      like_str = c.like_str
+      str = key.gsub(/[ |　]+/,' ')
+      arr = str.split(" ")
+      @books = Book.where(like_str,* arr.map{|w| "%#{w}%"})
     else
       @books = Book.where('title LIKE ? ', "%#{key}%")
     end
   end
 
 end
-  
-
-  # # Like条件生成
-  # def extract_str(arr)
-  #   buf = 'title LIKE ? ,'
-  #   arr.each do |str|
-  #     buf + '%' + str + '%,'    
-  #   end
-  #   # 最後の区切り文字削除
-  #   buf.chop
-  # end

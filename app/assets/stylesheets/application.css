@@ -5,6 +5,10 @@ body {
   min-height: 100%;
 }
 
+ul li {
+  list-style: none;
+}
+
 .header_menu {
   font-style: normal;
   border-style: solid;
@@ -17,6 +21,13 @@ body {
   font-size: 15px;
   padding-left: 20px;
   display: inline;
+  text-decoration: none;
+  color: white;
+}
+
+.header_title a{
+  text-decoration: none;
+  color: white;
 }
 
 .header_search {
@@ -24,11 +35,16 @@ body {
 }
 
 .header_list li {
-  list-style: none;
   margin: 5px;
   display: inline-block;
+  color: white;
+}
+
+.header_list a{
+  color: white;
 }
 
 .content h3 {
   padding: 10px;
 }
+

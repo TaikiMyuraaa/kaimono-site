@@ -35,7 +35,6 @@ class BooksController < ApplicationController
     @books = Book.search(params[:q])
     @rec= @books.length
     render :index
-    
   end
   
   private
